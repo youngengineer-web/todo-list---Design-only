@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { taskContext } from "./TaskContext";
 
 const List =()=>{
-    const item = useContext(taskContext);
+    const item = useContext (taskContext);
     console.log(item.taskItem);
     return(
         <div className="list">
