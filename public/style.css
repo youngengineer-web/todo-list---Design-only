@@ -7,7 +7,7 @@
 .main{
     text-align: center;
     height: 100vh;
-    background-color: aqua;
+    background-color: #0ff;
 }
 
 .title{
@@ -57,23 +57,32 @@
     outline-offset: 2px;
 }
 
+.noTask{
+    direction: rtl;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 50px auto;
+    color: #a37800;
+}
+
 .list{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     direction: rtl;
     margin: 20px auto;
-    padding: 10px 0px;
     width: 75%;
     max-width: 700px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    border-bottom: 1px solid #111d8577;
 }
 
-.listLeft,
-.listRight{
+.list li{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid #111d8577;
+    padding: 5px 5px;
 }
 
 .listLeft{
@@ -86,7 +95,7 @@
 }
 
 .fa-check-circle-o{
-    color: #006600;
+    color: #060;
 }
 
 .fa-times-circle-o{
@@ -97,3 +106,17 @@
     color: #bbbb15;
 }
 
+.fa-check-circle-o:hover{
+    color: #060;
+    text-shadow: 0px 0px 4px #050;
+}
+
+.fa-times-circle-o:hover{
+    color: #ff0303;
+    text-shadow: 0px 0px 4px #ff0303;
+}
+
+.fa-trash-o:hover{
+    color: #bbbb15;
+    text-shadow: 0px 0px 4px #bbbb15;
+}
